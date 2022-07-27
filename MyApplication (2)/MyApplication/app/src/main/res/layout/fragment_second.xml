@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purle">
+
+    <TextView
+        android:id="@+id/txttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/singleround"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="13th July, Wednesday" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/second_rv"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txttop"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

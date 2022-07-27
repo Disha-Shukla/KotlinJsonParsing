@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootcard"
+    android:background="@color/dark_purle">
+
+  <!--  <TextView
+        android:id="@+id/txttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/singleround"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="13th July, Wednesday" />-->
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_6sdp"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_115sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/purpleroundcorner">
+
+        <TextView
+            android:id="@+id/txtMatchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="casual"
+            android:text="Scotland vs Nepal"
+            android:textColor="@color/white"
+            android:textFontWeight="@integer/material_motion_duration_long_1" />
+
+        <TextView
+            android:id="@+id/txtODI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="casual"
+            android:text="ODI"
+            android:textColor="@color/white"
+            android:textFontWeight="@integer/material_motion_duration_long_1" />
+
+
+        <!--<LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMatchName"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rl_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_toRightOf="@id/iv_left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:text="ABC" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:text="DEF" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_api_24"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_toRightOf="@id/iv_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:text="ABC" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:text="DEF" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/txtStadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="casual"
+            android:text="Scotland vs Nepal"
+            android:textColor="@color/white"
+            android:textFontWeight="@integer/material_motion_duration_long_1" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="casual"
+            android:text="ODI"
+            android:textColor="@color/white"
+            android:textFontWeight="@integer/material_motion_duration_long_1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMatchName"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:background="@drawable/roundcorner"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+
+          <!--  <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/iv_left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            android:text="ABC" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/black"
+                            android:text="DEF" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+           <!-- </androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/vs2"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+
+            <!--<androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/iv_right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:text="ABC"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="DEF"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+            <!--</androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
